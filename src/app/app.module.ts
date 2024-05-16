@@ -14,6 +14,8 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactComponent } from './contact/contact.component';
     FormularioComponent,
     HomeComponent,
     NavBarComponent,
-    ContactComponent
+    ContactComponent,
+    ProductListComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,7 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [
     provideClientHydration()

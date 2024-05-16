@@ -4,19 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
-private items: any[]=[];
-addItem(item:any): void{
-  this.items.push(item);
+  constructor() {}
+getProducts(){
+  return['papas','Cholate','galleta']
 }
-removeItem(index:number):void{
-  this.items.splice(index,1);
-}
-getItem():any[]{
-  return this.items
-}
-clearCart():void{
-  this.items=[];
-}
-
-  constructor() { }
 }
