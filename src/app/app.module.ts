@@ -11,11 +11,11 @@ import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessagesModule } from 'primeng/messages';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './modules/home/home.component';
+import { NavbarComponent } from './modules/navbar/navbar.component';
 import { ContacComponent } from './contac/contac.component';
 import { ErrorComponent } from './error/error.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { ProductListComponent } from './modules/product-list/product-list.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent, ContacComponent, ErrorComponent, ProductListComponent],
