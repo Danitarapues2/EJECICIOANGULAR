@@ -4,8 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
-  constructor() {}
-getProducts(){
-  return['papas','Cholate','galleta']
+
+  constructor() {
+    console.log("Maquillaje")
+   }
+   getTelefonos() {
+    return ['labial', 'rimel', 'delineador']
+   }
 }
-}
+
