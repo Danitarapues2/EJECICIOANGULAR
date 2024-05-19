@@ -1,8 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { CartService } from '../cart.service';
-import { subscribe } from 'diagnostics_channel';
+import { CartService } from '../../cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -32,4 +31,3 @@ export class ProductListComponent {
   }
 
 }
-

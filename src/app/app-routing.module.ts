@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'navbar', component: NavbarComponent },
   { path: '', component: HomeComponent },
   { path: 'contactos', component: ContacComponent },
-  { path: 'maquillaje', component:ProductListComponent  },
+  { path: 'productos', component:ProductListComponent  },
   { path: '**', component: ErrorComponent },
 ];
 

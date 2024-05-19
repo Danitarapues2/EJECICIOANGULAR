@@ -1,5 +1,23 @@
-
-<h1>Marca de telefono</h1>
-<ul>
-    <li *ngFor="let produt of products">{{ produt }}</li>
-</ul>
+<div class="product-list">
+    <h2>Lista de Productos</h2>
+    <ul>
+      <!-- Listar los productos disponibles -->
+      <li *ngFor="let producto of productos">
+        {{ producto }}
+        <button (click)="onClickAdd(producto)">Agregar al Carrito</button>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="cart">
+    <h2>Carrito de Compras</h2>
+    <ul>
+      <!-- Listar los elementos en el carrito -->
+      <li *ngFor="let item of cartItems">
+        {{ item.name }} - {{ item.quantity }}
+        <button (click)="onClickDelete(item.id)">Eliminar</button>
+      </li>
+    </ul>
+    <button (click)="onClickClear()">Vaciar Carrito</button>
+  </div>
+  
